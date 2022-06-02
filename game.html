@@ -12,9 +12,9 @@
                 <div id="textbox"> 
                     <p></p>
                 </div>
-                <button class="optionbutton button1" onclick="startText">Starte Textausgabe</button>
-                <button class="optionbutton button2" onclick="startText">Button 2</button>
-                <button class="optionbutton button3" onclick="startText">Button 3</button>
+                <button class="optionbutton button1" onclick="startText()">Starte Textausgabe</button>
+                <button class="optionbutton button2" onclick="startText()">Button 2</button>
+                <button class="optionbutton button3" onclick="startText()">Button 3</button>
             </div>
         </div>
         <style>
@@ -39,6 +39,10 @@
                 height: 95%;
                 clear: both;
                 grid-area: textbox;
+                color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 5px;
             }
             .fullCenter{
                 position: absolute;
@@ -54,7 +58,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 80% 5% ;
-                gap: 0px 0px;
+                gap: 0px 5px;
                 grid-template-areas: 
                     "textbox textbox textbox"
                     "button1 button2 button3"
@@ -93,5 +97,7 @@
                 cursor: pointer;
             }
         </style>
+
+    <script language="javascript" type="text/javascript" src="game.js"></script>
     </body>
 </html>
