@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <div>
+            <h1 id="heading">Text based RPG</h1>
+        </div>
+        <button class="fullCenter" id="startButton" onclick="window.location.href='game.html'">Start</button>
+    </body>
+
+    <style>
+        body{
+            background-color: #191a19;
+        }
+        #startButton{
+            width: 25%;
+            height: 15%;
+            font-family: monospace;
+            font-size: 48px;
+            background-color: #153b1d;
+            border-color: #2f6325;
+            border-radius: 15px;
+            color: white;
+        }
+        #heading{
+            font-size: 56px;
+            font-family: monospace;
+            text-align: center;
+            color: white
+        }
+
+        .fullCenter{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
+
+</html>
